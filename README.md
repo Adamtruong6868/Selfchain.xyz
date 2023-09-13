@@ -44,3 +44,19 @@ Example Nodename = VNBnode, then: selfchaind init VNBnode --chain-id=self-dev-1
 ##### Download addrbook
 ```curl -Ls https://github.com/Adamtruong6868/Selfchain.xyz/blob/main/addrbook.json > $HOME/.selfchain/config/addrbook.json```
 
+##### Create Service
+```sudo tee /etc/systemd/system/selfchaind.service > /dev/null <<EOF
+[Unit]
+Description=selfchaind Daemon
+After=network-online.target
+[Service]
+User=$USER
+ExecStart=$(which selfchaind) start
+Restart=always
+RestartSec=3
+LimitNOFILE=65535
+[Install]
+WantedBy=multi-user.target
+EOF
+sudo systemctl daemon-reload
+sudo systemctl enable selfchaind```
