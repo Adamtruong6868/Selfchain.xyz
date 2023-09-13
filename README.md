@@ -2,6 +2,7 @@
 
 ### 1.Update system
 ```sudo apt update
+
 sudo apt-get install git curl build-essential make jq gcc snapd chrony lz4 tmux unzip bc -y
 ```
 ### 2.Install Go
@@ -20,33 +21,32 @@ go version
 ```
 ### 3.Install node
 
-```cd $HOME
+```cd $HOME ```
 
-```mkdir -p /root/go/bin/
+```mkdir -p /root/go/bin/ ```
 
-```wget https://ss-t.self.nodestake.top/selfchaind
+```wget https://ss-t.self.nodestake.top/selfchaind```
 
-```chmod +x selfchaind
+```chmod +x selfchaind```
 
-```mv selfchaind /root/go/bin/
+```mv selfchaind /root/go/bin/```
 
-```selfchaind version
-```
+```selfchaind version```
+
 ### 4. Initialize Node
 ##### Replace NodeName with your own moniker.
 
-```selfchaind init NodeName --chain-id=self-dev-1
-```
+```selfchaind init NodeName --chain-id=self-dev-1```
+
 
 Example Nodename = VNBnode, then: selfchaind init VNBnode --chain-id=self-dev-1
 
 ##### Download Genesis
-```curl -Ls https://github.com/Adamtruong6868/Selfchain.xyz/blob/main/genesis.json > $HOME/.selfchain/config/genesis.json
-```
+```curl -Ls https://github.com/Adamtruong6868/Selfchain.xyz/blob/main/genesis.json > $HOME/.selfchain/config/genesis.json ```
+
 
 ##### Download addrbook
-```curl -Ls https://github.com/Adamtruong6868/Selfchain.xyz/blob/main/addrbook.json > $HOME/.selfchain/config/addrbook.json
-```
+```curl -Ls https://github.com/Adamtruong6868/Selfchain.xyz/blob/main/addrbook.json > $HOME/.selfchain/config/addrbook.json ```
 
 ##### Create Service
 ```sudo tee /etc/systemd/system/selfchaind.service > /dev/null <<EOF
