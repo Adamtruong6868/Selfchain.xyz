@@ -17,3 +17,17 @@ export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 EOF
 source $HOME/.profile
 go version```
+```
+### 2.Install node
+
+```cd $HOME```
+
+```mkdir -p /root/go/bin/```
+
+```wget https://ss-t.self.nodestake.top/selfchaind```
+
+```chmod +x selfchaind```
+
+```mv selfchaind /root/go/bin/```
+
+```selfchaind version```
