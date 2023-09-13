@@ -21,18 +21,12 @@ go version
 ```
 ### 3.Install node
 
-```cd $HOME
-```
-```mkdir -p /root/go/bin/
-```
-```wget https://ss-t.self.nodestake.top/selfchaind
-```
-```chmod +x selfchaind
-```
-```mv selfchaind /root/go/bin/
-```
-```selfchaind version
-```
+```cd $HOME```
+```mkdir -p /root/go/bin/```
+```wget https://ss-t.self.nodestake.top/selfchaind```
+```chmod +x selfchaind```
+```mv selfchaind /root/go/bin/```
+```selfchaind version```
 ### 4. Initialize Node
 ##### Replace NodeName with your own moniker.
 
@@ -40,11 +34,9 @@ go version
 Example Nodename = VNBnode, then: selfchaind init VNBnode --chain-id=self-dev-1
 
 ##### Download Genesis
-```curl -Ls https://github.com/Adamtruong6868/Selfchain.xyz/blob/main/genesis.json > $HOME/.selfchain/config/genesis.json
-```
+```curl -Ls https://github.com/Adamtruong6868/Selfchain.xyz/blob/main/genesis.json > $HOME/.selfchain/config/genesis.json```
 ##### Download addrbook
-```curl -Ls https://github.com/Adamtruong6868/Selfchain.xyz/blob/main/addrbook.json > $HOME/.selfchain/config/addrbook.json
-```
+```curl -Ls https://github.com/Adamtruong6868/Selfchain.xyz/blob/main/addrbook.json > $HOME/.selfchain/config/addrbook.json```
 ##### Create Service
 ```sudo tee /etc/systemd/system/selfchaind.service > /dev/null <<EOF
 [Unit]
