@@ -32,6 +32,8 @@ go version```
 
 ```selfchaind version```
 ### 4. Initialize Node
-Replace NodeName with your own moniker.
+#### Replace NodeName with your own moniker.
+
 ```selfchaind init NodeName --chain-id=self-dev-1```
+
 Example Nodename = VNBnode, then: selfchaind init VNBnode --chain-id=self-dev-1
