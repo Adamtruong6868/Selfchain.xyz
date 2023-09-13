@@ -59,4 +59,5 @@ LimitNOFILE=65535
 WantedBy=multi-user.target
 EOF
 sudo systemctl daemon-reload
-sudo systemctl enable selfchaind```
+sudo systemctl enable selfchaind
+```
