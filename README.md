@@ -17,15 +17,3 @@ export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 EOF
 source $HOME/.profile
 go version```
-### 3.Install node
-cd $HOME
-
-mkdir -p /root/go/bin/
-
-wget https://github.com/Adamtruong6868/Selfchain.xyz/blob/main/selfchaind
-
-chmod +x selfchaind
-
-mv selfchaind /root/go/bin/
-
-selfchaind version
