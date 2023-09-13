@@ -18,7 +18,7 @@ EOF
 source $HOME/.profile
 go version```
 ```
-### 2.Install node
+### 3.Install node
 
 ```cd $HOME```
 
@@ -31,3 +31,7 @@ go version```
 ```mv selfchaind /root/go/bin/```
 
 ```selfchaind version```
+### 4. Initialize Node
+Replace NodeName with your own moniker.
+```selfchaind init NodeName --chain-id=self-dev-1```
+Example Nodename = VNBnode, then: selfchaind init VNBnode --chain-id=self-dev-1
