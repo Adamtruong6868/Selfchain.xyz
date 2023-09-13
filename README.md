@@ -32,8 +32,15 @@ go version```
 
 ```selfchaind version```
 ### 4. Initialize Node
-#### Replace NodeName with your own moniker.
+##### Replace NodeName with your own moniker.
 
 ```selfchaind init NodeName --chain-id=self-dev-1```
 
 Example Nodename = VNBnode, then: selfchaind init VNBnode --chain-id=self-dev-1
+
+##### Download Genesis
+```curl -Ls https://github.com/Adamtruong6868/Selfchain.xyz/blob/main/genesis.json > $HOME/.selfchain/config/genesis.json```
+
+##### Download addrbook
+```curl -Ls https://github.com/Adamtruong6868/Selfchain.xyz/blob/main/addrbook.json > $HOME/.selfchain/config/addrbook.json```
+```
