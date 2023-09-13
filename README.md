@@ -18,14 +18,14 @@ EOF
 source $HOME/.profile
 go version```
 ### 3.Install node
-```cd $HOME```
+cd $HOME
 
-```mkdir -p /root/go/bin/```
+mkdir -p /root/go/bin/
 
-```wget https://github.com/Adamtruong6868/Selfchain.xyz/blob/main/selfchaind```
+wget https://github.com/Adamtruong6868/Selfchain.xyz/blob/main/selfchaind
 
-```chmod +x selfchaind```
+chmod +x selfchaind
 
-```mv selfchaind /root/go/bin/```
+mv selfchaind /root/go/bin/
 
-```selfchaind version```
+selfchaind version
