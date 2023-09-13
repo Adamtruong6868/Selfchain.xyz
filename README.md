@@ -1,7 +1,7 @@
 # Selfchain.xyz
 
-#Update system
+## Update system
 
-sudo apt update
+```sudo apt update```
 
-sudo apt-get install git curl build-essential make jq gcc snapd chrony lz4 tmux unzip bc -y
+```sudo apt-get install git curl build-essential make jq gcc snapd chrony lz4 tmux unzip bc -y```
