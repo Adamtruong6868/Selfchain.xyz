@@ -60,3 +60,9 @@ EOF
 sudo systemctl daemon-reload
 sudo systemctl enable selfchaind
 ```
+##### Launch Node
+```sudo systemctl restart selfchaind```
+##### Check synch
+```journalctl -u selfchaind -f```
+##### Check logs
+```tail -f selfchain.out```
