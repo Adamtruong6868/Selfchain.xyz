@@ -28,9 +28,6 @@ go version
 
 ```
 cd $HOME
-```
-
-```
 mkdir -p /root/go/bin/
 ```
 
@@ -47,7 +44,7 @@ mv selfchaind /root/go/bin/
 
 ```
 selfchaind version 
-```
+
 ```
 ### 4. Initialize Node
 ##### Replace NodeName with your own moniker.
