@@ -31,7 +31,7 @@ cd $HOME
 mkdir -p /root/go/bin/
 ```
 ```
-wget https://github.com/Adamtruong6868/Selfchain.xyz/blob/main/selfchaind
+wget https://ss-t.self.nodestake.top/selfchaind
 ```
 ```
 chmod +x selfchaind
