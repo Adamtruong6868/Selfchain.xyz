@@ -37,6 +37,7 @@ go version
 ##### Replace NodeName with your own moniker.
 
 ```selfchaind init NodeName --chain-id=self-dev-1```
+
 Example Nodename = VNBnode, then: selfchaind init VNBnode --chain-id=self-dev-1
 
 ##### Download Genesis
