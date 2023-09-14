@@ -25,7 +25,7 @@ go version
 
 ```mkdir -p /root/go/bin/```
 
-```wget https://ss-t.self.nodestake.top/selfchaind```
+```wget https://github.com/Adamtruong6868/Selfchain.xyz/blob/main/selfchaind```
 
 ```chmod +x selfchaind```
 
