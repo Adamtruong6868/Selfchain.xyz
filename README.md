@@ -5,7 +5,9 @@
 sudo apt update
 ```
 
-```sudo apt-get install git curl build-essential make jq gcc snapd chrony lz4 tmux unzip bc -y```
+```
+sudo apt-get install git curl build-essential make jq gcc snapd chrony lz4 tmux unzip bc -y
+```
 
 ### 2.Install Go
 ```
@@ -24,18 +26,29 @@ go version
 ```
 ### 3.Install node
 
-```cd $HOME```
+```
+cd $HOME
+```
 
-```mkdir -p /root/go/bin/```
+```
+mkdir -p /root/go/bin/
+```
 
-```wget https://github.com/Adamtruong6868/Selfchain.xyz/blob/main/selfchaind```
+```
+wget https://github.com/Adamtruong6868/Selfchain.xyz/blob/main/selfchaind
+```
 
-```chmod +x selfchaind```
+```
+chmod +x selfchaind```
 
-```mv selfchaind /root/go/bin/```
+```
+mv selfchaind /root/go/bin/
+```
 
-```selfchaind version```
-
+```
+selfchaind version 
+```
+```
 ### 4. Initialize Node
 ##### Replace NodeName with your own moniker.
 
