@@ -30,33 +30,35 @@ go version
 cd $HOME
 mkdir -p /root/go/bin/
 ```
-
 ```
 wget https://github.com/Adamtruong6868/Selfchain.xyz/blob/main/selfchaind
 ```
-
 ```
-chmod +x selfchaind```
-
+chmod +x selfchaind
+```
 ```
 mv selfchaind /root/go/bin/
 ```
-
 ```
 selfchaind version 
-
 ```
 ### 4. Initialize Node
 ##### Replace NodeName with your own moniker.
 
-```selfchaind init NodeName --chain-id=self-dev-1```
+```
+selfchaind init NodeName --chain-id=self-dev-1
+```
 
 Example Nodename = VNBnode, then: selfchaind init VNBnode --chain-id=self-dev-1
 
 ##### Download Genesis
-```curl -Ls https://github.com/Adamtruong6868/Selfchain.xyz/blob/main/genesis.json > $HOME/.selfchain/config/genesis.json```
+```
+curl -Ls https://github.com/Adamtruong6868/Selfchain.xyz/blob/main/genesis.json > $HOME/.selfchain/config/genesis.json
+```
 ##### Download addrbook
-```curl -Ls https://github.com/Adamtruong6868/Selfchain.xyz/blob/main/addrbook.json > $HOME/.selfchain/config/addrbook.json```
+```
+curl -Ls https://github.com/Adamtruong6868/Selfchain.xyz/blob/main/addrbook.json > $HOME/.selfchain/config/addrbook.json
+```
 ##### Create Service
 ```
 sudo tee /etc/systemd/system/selfchaind.service > /dev/null <<EOF
@@ -76,8 +78,14 @@ sudo systemctl daemon-reload
 sudo systemctl enable selfchaind
 ```
 ##### Launch Node
-```sudo systemctl restart selfchaind```
+```
+sudo systemctl restart selfchaind
+```
 ##### Check synch
-```journalctl -u selfchaind -f```
+```
+journalctl -u selfchaind -f
+```
 ##### Check logs
-```tail -f selfchain.out```
+```
+tail -f selfchain.out
+```
